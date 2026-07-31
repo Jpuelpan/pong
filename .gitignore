@@ -1,1 +1,3 @@
 pong
+web/*.js
+web/*.wasm
