@@ -5,7 +5,7 @@ build: main.c
 	$(CC) $(CFLAGS) -g -o pong main.c
 
 build-wasm: main.c
-	emcc --use-port=sdl3 -o web/pong.html main.c # --embed-file ./assets/@/assets/
+	emcc --use-port=sdl3 -o web/pong.js main.c --embed-file ./assets/@/assets/
 
 clean:
 	rm ./pong

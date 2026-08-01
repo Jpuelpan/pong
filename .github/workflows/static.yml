@@ -37,7 +37,7 @@ jobs:
       - name: Verify
         run: emcc -v
       - name: Build for web
-        run: emcc --use-port=sdl3 -o web/pong.js main.c
+        run: emcc --use-port=sdl3 -o web/pong.js main.c --embed-file ./assets/@/assets/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
